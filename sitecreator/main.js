@@ -1,5 +1,5 @@
 function idMethod() {
-	return window.location.href.substring(window.location.href.lastIndexOf('#') + 1);
+	return decodeURI(window.location.href.substring(window.location.href.lastIndexOf('#') + 1));
 }
 function phpMethodQ(needArray)/* With needArray = true, you jut get an array of name=output. If false, you gen an object of name: output */ {
 	
