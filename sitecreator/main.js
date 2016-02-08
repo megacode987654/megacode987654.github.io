@@ -42,3 +42,5 @@ function phpMethodH(needArray) /* This method uses # instead of ? */ {
 	}
 	return obj;
 }
+var CODE = idMethod();
+$("body").append(CODE);
