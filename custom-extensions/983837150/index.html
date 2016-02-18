@@ -1,9 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset=ASCII lang=en-us />
-<title>&quot;() is ()&quot; block (Case-Sensative!)</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset=ASCII lang=en-us />
+    <title>&quot;() is ()&quot; block (Case-Sensative!)</title>
+  </head>
+  <body>
+    <div class=description>
+      <h1>() is ()</h1>
+      <h5>A case-sensative custom block</h5>
+    </div>
+    
+    <div class=preview>
+      <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/98387150/?autostart=true" frameborder="0" allowfullscreen></iframe>
+      <script>
+        (function(ext) {
+	ext._shutdown = function() {};
+	ext._getStatus = function() {
+		return {status: 2, msg: 'Ready'};
+	};
+	ext.thisIsThat = function(item, otherItem) {
+        	return item === otherItem;
+	};
+	var descriptor = {
+		blocks: [
+			['b', '%s is %s', 'runCommand', '', ''],
+        	]
+	};
+	ScratchExtensions.register('() is ()', descriptor, ext);
+})({});
+      </script>
+    </div>
+  </body>
+</html>
