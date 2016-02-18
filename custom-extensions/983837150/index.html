@@ -7,28 +7,11 @@
   <body>
     <div class=description>
       <h1>() is ()</h1>
-      <h5>A case-sensative custom block</h5>
+      <h5>A case-sensative custom block & extension. Get the <a href=extension.js>extension code</a>, or use <a href="http://scratchx.org/?url=http://clproject.github.io/custom-extensions/98287150/extension.js">ScratchX.</a></h5>
     </div>
     
     <div class=preview>
       <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/98387150/?autostart=true" frameborder="0" allowfullscreen></iframe>
-      <script>
-        (function(ext) {
-	ext._shutdown = function() {};
-	ext._getStatus = function() {
-		return {status: 2, msg: 'Ready'};
-	};
-	ext.thisIsThat = function(item, otherItem) {
-        	return item === otherItem;
-	};
-	var descriptor = {
-		blocks: [
-			['b', '%s is %s', 'runCommand', '', ''],
-        	]
-	};
-	ScratchExtensions.register('() is ()', descriptor, ext);
-})({});
-      </script>
     </div>
   </body>
 </html>
