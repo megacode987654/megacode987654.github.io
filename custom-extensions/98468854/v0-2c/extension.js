@@ -39,8 +39,8 @@ var win = window.open("http://scratch.mit.edu/search/google_results/?q=" + encod
 }
 };
 ext.encodeOrDecode = function(what, txt) {
-if (what === "encode") {return encodeURI(txt);}
-return decodeURI(txt);
+if (what === "encode") {return encodeURIComponent(txt);}
+return decodeURIComponent(txt);
 }
 	var descriptor = {
 "menus": {
