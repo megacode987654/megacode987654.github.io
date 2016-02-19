@@ -4,7 +4,7 @@
 		return {status: 2, msg: 'Ready'};
 	};
 	ext.openLink = function(url) {
-        	if (confirm("This project is attempting to send you to the followind website: " + url + "\nContinue?")) {
+        	if (confirm("This project is attempting to send you to the following website:\n" + url + "\nContinue?")) {
 var win = window.open(url, '_blank');
 win.focus();
 }};
