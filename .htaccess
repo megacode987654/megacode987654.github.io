@@ -1,1 +1,3 @@
-redirect /custom-extensions/is/ http://clproject.github.io/custom-extensions/98387150/
+redirect /custom-extensions/is/~file http://clproject.github.io/custom-extensions/98387150/~file
+RewriteEngine on
+RewriteCond %{REQUEST_URI} ^/~file
