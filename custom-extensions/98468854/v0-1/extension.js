@@ -33,7 +33,7 @@ return thingy;
 ['r', 'if %b then %s else %s', 'ifThenElse', null, '', ''],
 ['r', '%n ^ %n', 'power', 2, 3],
 ['f', 'cause Scrach to self-destruct', 'destroyScratch'],
-['h', 'when %b', 'whenThis', null],,
+['h', 'when %b', 'whenThis', null],
         	]
 	};
 	ScratchExtensions.register('Code: More-Blocks', descriptor, ext);
