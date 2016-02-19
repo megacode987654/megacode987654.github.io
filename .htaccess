@@ -1,5 +1,5 @@
 //301 Redirect Entire Directory
-RedirectMatch 301 /custom-extensions/code-moreblocks(.*) /custom-extensions/98468854/$1
+RedirectMatch 301 /custom-extensions/code-moreblocks/(*.*) /custom-extensions/98468854/$1
 
 //Custom 400 errors
 ErrorDocument 400 400.html
