@@ -14,9 +14,9 @@
     <div class=preview>
       <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/98387150/?autostart=true" frameborder="0" allowfullscreen></iframe>
     </div>
-    <h5>Once the project loads, click here to <a id=clickHere>to enable the extension</a></h5>
+    <h5 id=hi>Once the project loads, click here to <a id=clickHere>to enable the extension</a></h5>
     <script>
-      $('#clickHere').click(function() {$('body').append('<script src=extension.js><\/script>');$('#clickHere').text("");});
+      $('#clickHere').click(function() {$('body').append('<script src=extension.js><\/script>');$('#clickHere').text("");$("#hi").text("Extension enabled!")});
     </script>
   </body>
 </html>
