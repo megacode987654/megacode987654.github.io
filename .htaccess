@@ -1,1 +1,21 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^clproject.github.io[nc]
+RewriteRule ^(.*)$ http://www.clproject.github.io/$1 [r=301,nc]
 
+//301 Redirect Entire Directory
+RedirectMatch 301 /custom-extensions/is/(.*) /custom-extensions/98387150/$1
+
+//Custom 400 errors
+ErrorDocument 400 400.html
+
+//Custom 401 errors
+ErrorDocument 401 401.html
+
+//Custom 403 errors
+ErrorDocument 403 403.html
+
+//Custom 404 errors
+ErrorDocument 404 404.html
+
+//Custom 500 errors
+ErrorDocument 500 500.html
