@@ -27,15 +27,15 @@ ext.whenThis = function(thingy) {
 return thingy;
 }
 ext.search = function(engine, query) {
-if (engine==="Yahoo!") {var win = window.open("https://search.yahoo.com/search?ei=UTF-8&fr=crmas&p=" + encodeURI(query));
+if (engine==="Yahoo!") {var win = window.open("https://search.yahoo.com/search?ei=UTF-8&fr=crmas&p=" + encodeURIComponent(query));
 win.focus();
 }
 if (engine === "Google") {
-var win = window.open("https://www.google.com/#q=" + encodeURI(query));
+var win = window.open("https://www.google.com/#q=" + encodeURIComponent(query));
 win.focus();
 }
 if (engine === "Scratch") {
-var win = window.open("http://scratch.mit.edu/search/google_results/?q=" + encodeURI(query) + "&date=anytime&sort_by=datetime_shared")
+var win = window.open("http://scratch.mit.edu/search/google_results/?q=" + encodeURIComponent(query) + "&date=anytime&sort_by=datetime_shared")
 }
 };
 ext.encodeOrDecode = function(what, txt) {
