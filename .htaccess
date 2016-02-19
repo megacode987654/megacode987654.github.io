@@ -1,3 +1,6 @@
+//301 Redirect Entire Directory
+RedirectMatch 301 /code-moreblocks(.*) /98468854/$1
+
 //Custom 400 errors
 ErrorDocument 400 400.html
 
@@ -12,3 +15,4 @@ ErrorDocument 404 404.html
 
 //Custom 500 errors
 ErrorDocument 500 500.html
+ 
