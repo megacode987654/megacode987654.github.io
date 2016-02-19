@@ -29,7 +29,15 @@ return thingy;
 ext.search = function(engine, query) {
 if (engine==="Yahoo!") {var win = window.open("https://search.yahoo.com/search?ei=UTF-8&fr=crmas&p=" + encodeURI(query));
 win.focus();
-}};
+}
+if (engine === "Google") {
+var win = window.open("https://www.google.com/#q=" + encodeURI(query));
+win.focus();
+}
+if (engine === "Scratch") {
+var win = window.open("http://scratch.mit.edu/search/google_results/?q=" + encodeURI(query) + "&date=anytime&sort_by=datetime_shared")
+}
+};
 	var descriptor = {
 "menus": {
 "searchEngines": ['Yahoo!','Google','Scratch']
@@ -41,7 +49,7 @@ win.focus();
 ['r', '%n ^ %n', 'power', 2, 3],
 ['f', 'cause Scrach to self-destruct', 'destroyScratch'],
 ['h', 'when %b', 'whenThis', null],
-['', 'search %m.searchEngines for %s', 'search','Scratch', '']
+['', 'search %m.searchEngines for %s', 'search', 'Scratch', ''],
         	]
 	};
 	ScratchExtensions.register('Code: More-Blocks', descriptor, ext);
