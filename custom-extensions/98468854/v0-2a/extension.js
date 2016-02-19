@@ -38,9 +38,14 @@ if (engine === "Scratch") {
 var win = window.open("http://scratch.mit.edu/search/google_results/?q=" + encodeURI(query) + "&date=anytime&sort_by=datetime_shared")
 }
 };
+ext.encodeOrDecode = function(what, txt) {
+if (what === "encode") {return encodeURI(txt);}
+return decodeURI(txt);
+}
 	var descriptor = {
 "menus": {
-"searchEngines": ['Yahoo!','Google','Scratch']
+"searchEngines": ['Yahoo!','Google','Scratch'],
+"enDeCode": ["encode", "decode"]
 },
 		blocks: [
 			['', 'open link %s', 'openLink', 'http://example.org/'],
@@ -50,6 +55,7 @@ var win = window.open("http://scratch.mit.edu/search/google_results/?q=" + encod
 ['f', 'cause Scrach to self-destruct', 'destroyScratch'],
 ['h', 'when %b', 'whenThis', null],
 ['', 'search %m.searchEngines for %s', 'search', 'Scratch', ''],
+['r', '%m.enDeCode URI %s','encodeOrDecode', 'encode', '~!@#$%^&*()`:";\'\\\/+=-_,.<>']
         	]
 	};
 	ScratchExtensions.register('Code: More-Blocks', descriptor, ext);
