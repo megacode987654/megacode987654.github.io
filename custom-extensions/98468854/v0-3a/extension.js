@@ -45,11 +45,17 @@ ext.encodeOrDecode = function(what, txt) {
 if (what === "encode") {return encodeURIComponent(txt);}
 return decodeURIComponent(txt);
 }
+ext.addStuff = function(what, where) {
+	$(where).append(what)
+}
+ext.doThisAlways = function() {
+	return true;
+}
 	var descriptor = {
 "menus": {
 "searchEngines": ['Yahoo!','Google','Scratch'],
 "enDeCode": ["encode", "decode"],
-"moreMathOp": ["^", "√"]
+"moreMathOp": ["^", "√"],
 },
 		blocks: [
 			['', 'open link %s', 'openLink', 'http://example.org/'],
@@ -59,8 +65,10 @@ return decodeURIComponent(txt);
 ['f', 'cause Scrach to self-destruct', 'destroyScratch'],
 ['h', 'when %b', 'whenThis', null],
 ['', 'search %m.searchEngines for %s', 'search', 'Scratch', ''],
-['r', '%m.enDeCode URI %s','encodeOrDecode', 'encode', '~!@#$%^&*()`:";\'\\\/+=-_,.<>']
+['r', '%m.enDeCode URI %s','encodeOrDecode', 'encode', '~!@#$%^&*()`:";\'\\\/+=-_,.<>'],
+['', 'insert %s at the end of %s of HTML file', 'addStuff', 'Hello world!', 'body'],
+['h', 'always', 'doThisAlways']
         	]
 	};
-	ScratchExtensions.register('Code: More-Blocks', descriptor, ext);
+	ScratchExtensions.register('UltraBlox v0.3c', descriptor, ext);
 })({});
