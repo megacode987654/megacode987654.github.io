@@ -48,9 +48,6 @@ return decodeURIComponent(txt);
 ext.addStuff = function(what, where) {
 	$(where).append(what)
 }
-ext.doThisAlways = function() {
-	return true;
-}
 	var descriptor = {
 "menus": {
 "searchEngines": ['Yahoo!','Google','Scratch'],
@@ -67,7 +64,6 @@ ext.doThisAlways = function() {
 ['', 'search %m.searchEngines for %s', 'search', 'Scratch', ''],
 ['r', '%m.enDeCode URI %s','encodeOrDecode', 'encode', '~!@#$%^&*()`:";\'\\\/+=-_,.<>'],
 ['', 'insert %s at the end of %s of HTML file', 'addStuff', 'Hello world!', 'body'],
-['h', 'always', 'doThisAlways']
         	]
 	};
 	ScratchExtensions.register('UltraBlox v0.3c', descriptor, ext);
