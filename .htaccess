@@ -13,3 +13,5 @@ ErrorDocument 404 404.html
 //Custom 500 errors
 ErrorDocument 500 500.html
  
+// XHTML index
+DirectoryIndex index.xhtml
