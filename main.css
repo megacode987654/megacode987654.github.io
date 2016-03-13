@@ -1,12 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 div#gooleplus {
   width: 60px;
-  display: inline-block;
   background-color: LightYellow;
 }
 div#main {
   margin-left: 75px;
-  display: inline-block;
 }
 a {
   text-decoration: none;
