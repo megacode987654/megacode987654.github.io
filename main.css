@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+div#gooleplus {
+  width: 60px;
+  height: 28px;
+}
 div#main {
-  margin-left: 100px;
+  margin-left: 65px;
 }
 a {
   text-decoration: none;
