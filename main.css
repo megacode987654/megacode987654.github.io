@@ -6,7 +6,7 @@ div#gooleplus {
 }
 div#main {
   margin-left: 75px;
-  display: inside-block;
+  display: inline-block;
 }
 a {
   text-decoration: none;
