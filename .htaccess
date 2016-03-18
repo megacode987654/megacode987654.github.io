@@ -15,7 +15,3 @@ ErrorDocument 500 500.html
  
 // XHTML index
 DirectoryIndex index.xhtml
-RewriteEngine on
-RewriteCond %{HTTPS} !on
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
-
