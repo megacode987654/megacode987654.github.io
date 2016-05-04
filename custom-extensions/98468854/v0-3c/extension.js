@@ -1,4 +1,4 @@
-(function(ext) {
+(function(ext, $) {
     ext._shutdown = function() {}
     ;
     ext._getStatus = function() {
@@ -79,4 +79,4 @@
         ]
     };
     ScratchExtensions.register('UltraBlox v0.3c', descriptor, ext);
-})({});
+})({}, window.jQuery);
