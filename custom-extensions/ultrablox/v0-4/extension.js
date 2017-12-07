@@ -78,5 +78,5 @@
         ['', 'insert %s at the end of %s of HTML file', 'addStuff', 'Hello world!', 'body'], 
         ]
     };
-    ScratchExtensions.register('UltraBlox v0.3c', descriptor, ext);
+    ScratchExtensions.register('UltraBlox v0.4.a.0', descriptor, ext);
 })({}, window.jQuery);
